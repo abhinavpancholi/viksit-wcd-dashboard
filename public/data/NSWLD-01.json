@@ -1,0 +1,5762 @@
+[
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "MAY",
+    "target": 42379,
+    "actual": 15717
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "OCTOBER",
+    "target": 36776,
+    "actual": 17034
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "NOVEMBER",
+    "target": 39034,
+    "actual": 20687
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "AUGUST",
+    "target": 41434,
+    "actual": 23123
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "SEPTEMBER",
+    "target": 39458,
+    "actual": 21321
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "MAY",
+    "target": 25742,
+    "actual": 10771
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "JUNE",
+    "target": 38545,
+    "actual": 23770
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "JULY",
+    "target": 25615,
+    "actual": 11209
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "JULY",
+    "target": 36781,
+    "actual": 22816
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "JUNE",
+    "target": 26038,
+    "actual": 15113
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "APRIL",
+    "target": 14222,
+    "actual": 4246
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "SEPTEMBER",
+    "target": 26215,
+    "actual": 16341
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "APRIL",
+    "target": 12010,
+    "actual": 2244
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "OCTOBER",
+    "target": 25141,
+    "actual": 16325
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "NOVEMBER",
+    "target": 27197,
+    "actual": 19100
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "AUGUST",
+    "target": 27769,
+    "actual": 19705
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "MAY",
+    "target": 11925,
+    "actual": 4097
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "AUGUST",
+    "target": 13556,
+    "actual": 6842
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "JULY",
+    "target": 12308,
+    "actual": 5630
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "APRIL",
+    "target": 8618,
+    "actual": 2136
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "JUNE",
+    "target": 12039,
+    "actual": 6029
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "OCTOBER",
+    "target": 12551,
+    "actual": 6844
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "DECEMBER",
+    "target": 28470,
+    "actual": 23003
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "NOVEMBER",
+    "target": 13606,
+    "actual": 8145
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "SEPTEMBER",
+    "target": 13293,
+    "actual": 7892
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "MAY",
+    "target": 8211,
+    "actual": 2835
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "DECEMBER",
+    "target": 34642,
+    "actual": 29390
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "DECEMBER",
+    "target": 13548,
+    "actual": 8711
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "APRIL",
+    "target": 5960,
+    "actual": 1556
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "FEBRUARY",
+    "target": 29081,
+    "actual": 24793
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "MARCH",
+    "target": 28866,
+    "actual": 24582
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "JANUARY",
+    "target": 13105,
+    "actual": 9070
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "FEBRUARY",
+    "target": 13492,
+    "actual": 9607
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "AUGUST",
+    "target": 9287,
+    "actual": 5482
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "MARCH",
+    "target": 13127,
+    "actual": 9335
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "SEPTEMBER",
+    "target": 8959,
+    "actual": 5266
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "FEBRUARY",
+    "target": 35975,
+    "actual": 32311
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "JULY",
+    "target": 8546,
+    "actual": 4997
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "NOVEMBER",
+    "target": 8858,
+    "actual": 5497
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "JANUARY",
+    "target": 28737,
+    "actual": 25421
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "JUNE",
+    "target": 8636,
+    "actual": 5386
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "NOVEMBER",
+    "target": 8766,
+    "actual": 5703
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "APRIL",
+    "target": 4054,
+    "actual": 1048
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "MARCH",
+    "target": 9592,
+    "actual": 6689
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "OCTOBER",
+    "target": 8559,
+    "actual": 5694
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "AUGUST",
+    "target": 5973,
+    "actual": 3232
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "SEPTEMBER",
+    "target": 5641,
+    "actual": 2984
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "FEBRUARY",
+    "target": 9858,
+    "actual": 7330
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "MAY",
+    "target": 6760,
+    "actual": 4294
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "JANUARY",
+    "target": 35999,
+    "actual": 33551
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "MARCH",
+    "target": 31235,
+    "actual": 28808
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "OCTOBER",
+    "target": 5122,
+    "actual": 2868
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "APRIL",
+    "target": 2728,
+    "actual": 513
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "MAY",
+    "target": 4199,
+    "actual": 2035
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "NOVEMBER",
+    "target": 5174,
+    "actual": 3028
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "JULY",
+    "target": 4539,
+    "actual": 2508
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "AUGUST",
+    "target": 7643,
+    "actual": 5618
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "JUNE",
+    "target": 6813,
+    "actual": 4890
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "SEPTEMBER",
+    "target": 7554,
+    "actual": 5654
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "OCTOBER",
+    "target": 7262,
+    "actual": 5508
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "MARCH",
+    "target": 8445,
+    "actual": 6703
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "DECEMBER",
+    "target": 9121,
+    "actual": 7395
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "FEBRUARY",
+    "target": 8132,
+    "actual": 6425
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "JANUARY",
+    "target": 9561,
+    "actual": 7947
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "JANUARY",
+    "target": 4526,
+    "actual": 3030
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "FEBRUARY",
+    "target": 4685,
+    "actual": 3197
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "JUNE",
+    "target": 4037,
+    "actual": 2576
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "JANUARY",
+    "target": 7847,
+    "actual": 6398
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "DECEMBER",
+    "target": 7615,
+    "actual": 6181
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "JULY",
+    "target": 6757,
+    "actual": 5379
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "MARCH",
+    "target": 4481,
+    "actual": 3196
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2022-23",
+    "month": "DECEMBER",
+    "target": 4621,
+    "actual": 3438
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "JUNE",
+    "target": 28833,
+    "actual": 16486
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "NOVEMBER",
+    "target": 25318,
+    "actual": 13498
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "JUNE",
+    "target": 27654,
+    "actual": 19578
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "DECEMBER",
+    "target": 25391,
+    "actual": 21098
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "APRIL",
+    "target": 26724,
+    "actual": 22802
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "SEPTEMBER",
+    "target": 26489,
+    "actual": 23256
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "MAY",
+    "target": 27731,
+    "actual": 24569
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "JUNE",
+    "target": 12696,
+    "actual": 9939
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "SEPTEMBER",
+    "target": 7939,
+    "actual": 5184
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "JANUARY",
+    "target": 25683,
+    "actual": 23307
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "JULY",
+    "target": 12270,
+    "actual": 9910
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "AUGUST",
+    "target": 12270,
+    "actual": 9910
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "OCTOBER",
+    "target": 12270,
+    "actual": 9910
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "APRIL",
+    "target": 12241,
+    "actual": 9976
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "SEPTEMBER",
+    "target": 8570,
+    "actual": 6318
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "APRIL",
+    "target": 27283,
+    "actual": 25043
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "FEBRUARY",
+    "target": 25031,
+    "actual": 23041
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "MAY",
+    "target": 12659,
+    "actual": 10696
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "JULY",
+    "target": 26793,
+    "actual": 24865
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "AUGUST",
+    "target": 26793,
+    "actual": 24865
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "OCTOBER",
+    "target": 26793,
+    "actual": 24865
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "APRIL",
+    "target": 8735,
+    "actual": 6818
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "MAY",
+    "target": 28688,
+    "actual": 26844
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "SEPTEMBER",
+    "target": 30018,
+    "actual": 28180
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "JUNE",
+    "target": 8978,
+    "actual": 7181
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "DECEMBER",
+    "target": 8445,
+    "actual": 6666
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "JUNE",
+    "target": 8057,
+    "actual": 6279
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "DECEMBER",
+    "target": 29033,
+    "actual": 27286
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "NOVEMBER",
+    "target": 8282,
+    "actual": 6608
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "MAY",
+    "target": 8869,
+    "actual": 7256
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "JULY",
+    "target": 30453,
+    "actual": 28846
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "AUGUST",
+    "target": 30453,
+    "actual": 28846
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "OCTOBER",
+    "target": 30453,
+    "actual": 28846
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "MARCH",
+    "target": 24191,
+    "actual": 22669
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "JULY",
+    "target": 8959,
+    "actual": 7451
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "AUGUST",
+    "target": 8959,
+    "actual": 7451
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "OCTOBER",
+    "target": 8959,
+    "actual": 7451
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "JANUARY",
+    "target": 29339,
+    "actual": 27834
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "FEBRUARY",
+    "target": 7997,
+    "actual": 6541
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "JANUARY",
+    "target": 8293,
+    "actual": 6858
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "NOVEMBER",
+    "target": 28032,
+    "actual": 26614
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "FEBRUARY",
+    "target": 27523,
+    "actual": 26130
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "MARCH",
+    "target": 7773,
+    "actual": 6418
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "NOVEMBER",
+    "target": 8109,
+    "actual": 6875
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "DECEMBER",
+    "target": 8172,
+    "actual": 6942
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "JANUARY",
+    "target": 8128,
+    "actual": 6921
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "MAY",
+    "target": 4458,
+    "actual": 3302
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "MARCH",
+    "target": 25487,
+    "actual": 24405
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "FEBRUARY",
+    "target": 7741,
+    "actual": 6724
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "SEPTEMBER",
+    "target": 4617,
+    "actual": 3644
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "APRIL",
+    "target": 4192,
+    "actual": 3358
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "JUNE",
+    "target": 4742,
+    "actual": 3921
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "MARCH",
+    "target": 7358,
+    "actual": 6537
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "SEPTEMBER",
+    "target": 7550,
+    "actual": 6746
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "NOVEMBER",
+    "target": 3804,
+    "actual": 3151
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "APRIL",
+    "target": 8113,
+    "actual": 7480
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "MAY",
+    "target": 8242,
+    "actual": 7636
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "JANUARY",
+    "target": 3615,
+    "actual": 3015
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "DECEMBER",
+    "target": 3730,
+    "actual": 3154
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "JULY",
+    "target": 4636,
+    "actual": 4138
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "AUGUST",
+    "target": 4636,
+    "actual": 4138
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "OCTOBER",
+    "target": 4636,
+    "actual": 4138
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "DECEMBER",
+    "target": 7211,
+    "actual": 6730
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "FEBRUARY",
+    "target": 3406,
+    "actual": 2931
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "MARCH",
+    "target": 3336,
+    "actual": 2884
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "FEBRUARY",
+    "target": 7015,
+    "actual": 6567
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "NOVEMBER",
+    "target": 7202,
+    "actual": 6760
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "JULY",
+    "target": 7719,
+    "actual": 7293
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "AUGUST",
+    "target": 7719,
+    "actual": 7293
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "OCTOBER",
+    "target": 7719,
+    "actual": 7293
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "JANUARY",
+    "target": 7250,
+    "actual": 6836
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2023-24",
+    "month": "MARCH",
+    "target": 6678,
+    "actual": 6293
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "JANUARY",
+    "target": 21999,
+    "actual": 17407
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "JANUARY",
+    "target": 22689,
+    "actual": 19659
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "DECEMBER",
+    "target": 21828,
+    "actual": 19443
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "DECEMBER",
+    "target": 21540,
+    "actual": 19359
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "NOVEMBER",
+    "target": 21467,
+    "actual": 20068
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "APRIL",
+    "target": 7876,
+    "actual": 6829
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "APRIL",
+    "target": 24164,
+    "actual": 23129
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "JUNE",
+    "target": 23696,
+    "actual": 22667
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "JANUARY",
+    "target": 7266,
+    "actual": 6314
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "JUNE",
+    "target": 7941,
+    "actual": 7032
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "MAY",
+    "target": 7735,
+    "actual": 6878
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "MAY",
+    "target": 23547,
+    "actual": 22710
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "NOVEMBER",
+    "target": 22483,
+    "actual": 21647
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "DECEMBER",
+    "target": 7401,
+    "actual": 6624
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "OCTOBER",
+    "target": 21794,
+    "actual": 21019
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "JULY",
+    "target": 23663,
+    "actual": 22913
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "SEPTEMBER",
+    "target": 22808,
+    "actual": 22092
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "APRIL",
+    "target": 23975,
+    "actual": 23270
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "AUGUST",
+    "target": 22998,
+    "actual": 22338
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "NOVEMBER",
+    "target": 7513,
+    "actual": 6861
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "APRIL",
+    "target": 7274,
+    "actual": 6654
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "JULY",
+    "target": 7861,
+    "actual": 7242
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "JUNE",
+    "target": 7022,
+    "actual": 6441
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "DECEMBER",
+    "target": 5863,
+    "actual": 5294
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "AUGUST",
+    "target": 7620,
+    "actual": 7055
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "JANUARY",
+    "target": 6457,
+    "actual": 5904
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "DECEMBER",
+    "target": 6579,
+    "actual": 6050
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "MAY",
+    "target": 6868,
+    "actual": 6342
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "MAY",
+    "target": 22986,
+    "actual": 22472
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "NOVEMBER",
+    "target": 6516,
+    "actual": 6037
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "JANUARY",
+    "target": 6504,
+    "actual": 6044
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "SEPTEMBER",
+    "target": 7592,
+    "actual": 7148
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "SEPTEMBER",
+    "target": 24574,
+    "actual": 24161
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "JUNE",
+    "target": 23476,
+    "actual": 23071
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "OCTOBER",
+    "target": 7256,
+    "actual": 6853
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "JULY",
+    "target": 6944,
+    "actual": 6542
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "JULY",
+    "target": 24409,
+    "actual": 24052
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "JANUARY",
+    "target": 2488,
+    "actual": 2151
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "DECEMBER",
+    "target": 2544,
+    "actual": 2232
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "APRIL",
+    "target": 3358,
+    "actual": 3049
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "SEPTEMBER",
+    "target": 6517,
+    "actual": 6215
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "NOVEMBER",
+    "target": 5808,
+    "actual": 5511
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "MAY",
+    "target": 3190,
+    "actual": 2899
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "OCTOBER",
+    "target": 6198,
+    "actual": 5919
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "AUGUST",
+    "target": 6593,
+    "actual": 6332
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "AUGUST",
+    "target": 24348,
+    "actual": 24094
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "APRIL",
+    "target": 6427,
+    "actual": 6174
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "NOVEMBER",
+    "target": 2751,
+    "actual": 2508
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "OCTOBER",
+    "target": 22941,
+    "actual": 22702
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "JUNE",
+    "target": 6457,
+    "actual": 6236
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "JUNE",
+    "target": 3156,
+    "actual": 2938
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "MAY",
+    "target": 6091,
+    "actual": 5877
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "JULY",
+    "target": 3152,
+    "actual": 2999
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "SEPTEMBER",
+    "target": 6206,
+    "actual": 6055
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "OCTOBER",
+    "target": 2910,
+    "actual": 2769
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "AUGUST",
+    "target": 6310,
+    "actual": 6177
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "JULY",
+    "target": 6397,
+    "actual": 6265
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "AUGUST",
+    "target": 3037,
+    "actual": 2915
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "OCTOBER",
+    "target": 5820,
+    "actual": 5710
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "SEPTEMBER",
+    "target": 3115,
+    "actual": 3018
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "FEBRUARY",
+    "target": 22063,
+    "actual": 16109
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "MARCH",
+    "target": 22166,
+    "actual": 16319
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "FEBRUARY",
+    "target": 22946,
+    "actual": 18218
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "MARCH",
+    "target": 21564,
+    "actual": 13632
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "FEBRUARY",
+    "target": 2515,
+    "actual": 2185
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "MARCH",
+    "target": 2518,
+    "actual": 2218
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "FEBRUARY",
+    "target": 7221,
+    "actual": 5979
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "MARCH",
+    "target": 7241,
+    "actual": 6062
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "FEBRUARY",
+    "target": 9988,
+    "actual": 8851
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "MARCH",
+    "target": 10436,
+    "actual": 8981
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "FEBRUARY",
+    "target": 6549,
+    "actual": 6138
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2024-25",
+    "month": "MARCH",
+    "target": 6536,
+    "actual": 6116
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "OCTOBER",
+    "target": 24383,
+    "actual": 9696
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "JULY",
+    "target": 19463,
+    "actual": 4942
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "SEPTEMBER",
+    "target": 22190,
+    "actual": 10543
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "JULY",
+    "target": 22131,
+    "actual": 12115
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "AUGUST",
+    "target": 20555,
+    "actual": 10904
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "OCTOBER",
+    "target": 21042,
+    "actual": 12980
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "APRIL",
+    "target": 20141,
+    "actual": 12375
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "AUGUST",
+    "target": 21440,
+    "actual": 14115
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "JUNE",
+    "target": 18993,
+    "actual": 11708
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "JUNE",
+    "target": 21462,
+    "actual": 14478
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "MAY",
+    "target": 18393,
+    "actual": 11413
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "MAY",
+    "target": 21072,
+    "actual": 14277
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "SEPTEMBER",
+    "target": 21491,
+    "actual": 14884
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "APRIL",
+    "target": 22096,
+    "actual": 15600
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "JULY",
+    "target": 7724,
+    "actual": 3179
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "JULY",
+    "target": 7436,
+    "actual": 3342
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "AUGUST",
+    "target": 6818,
+    "actual": 3487
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "AUGUST",
+    "target": 7363,
+    "actual": 4106
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "OCTOBER",
+    "target": 6570,
+    "actual": 3833
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "SEPTEMBER",
+    "target": 6785,
+    "actual": 4169
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "SEPTEMBER",
+    "target": 7234,
+    "actual": 4780
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "OCTOBER",
+    "target": 6981,
+    "actual": 4688
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "JULY",
+    "target": 6249,
+    "actual": 4468
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "JULY",
+    "target": 2656,
+    "actual": 1218
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "APRIL",
+    "target": 7232,
+    "actual": 6063
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "AUGUST",
+    "target": 6003,
+    "actual": 4909
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "JUNE",
+    "target": 7345,
+    "actual": 6302
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "MAY",
+    "target": 6998,
+    "actual": 5982
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "AUGUST",
+    "target": 2541,
+    "actual": 1684
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "APRIL",
+    "target": 6945,
+    "actual": 6156
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "JUNE",
+    "target": 6873,
+    "actual": 6092
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "OCTOBER",
+    "target": 2239,
+    "actual": 1553
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "SEPTEMBER",
+    "target": 2421,
+    "actual": 1770
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "MAY",
+    "target": 6480,
+    "actual": 5829
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "JUNE",
+    "target": 6143,
+    "actual": 5674
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "MAY",
+    "target": 6047,
+    "actual": 5634
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "APRIL",
+    "target": 6340,
+    "actual": 5951
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "MAY",
+    "target": 2443,
+    "actual": 2203
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "APRIL",
+    "target": 2536,
+    "actual": 2305
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "JUNE",
+    "target": 2567,
+    "actual": 2386
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "NOVEMBER",
+    "target": 20912,
+    "actual": 13909
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "DECEMBER",
+    "target": 24328,
+    "actual": 19408
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "JANUARY",
+    "target": 24926,
+    "actual": 19847
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "FEBRUARY",
+    "target": 25111,
+    "actual": 19877
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "MARCH",
+    "target": 24353,
+    "actual": 13738
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "NOVEMBER",
+    "target": 35030,
+    "actual": 25985
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "DECEMBER",
+    "target": 41640,
+    "actual": 33661
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "JANUARY",
+    "target": 42184,
+    "actual": 29018
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "FEBRUARY",
+    "target": 43176,
+    "actual": 32946
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "MARCH",
+    "target": 39408,
+    "actual": 8787
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "NOVEMBER",
+    "target": 2934,
+    "actual": 2186
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "DECEMBER",
+    "target": 3092,
+    "actual": 2682
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "JANUARY",
+    "target": 3029,
+    "actual": 2345
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "FEBRUARY",
+    "target": 2980,
+    "actual": 2525
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "MARCH",
+    "target": 3003,
+    "actual": 2511
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "NOVEMBER",
+    "target": 6379,
+    "actual": 4076
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "DECEMBER",
+    "target": 7301,
+    "actual": 5648
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "JANUARY",
+    "target": 7618,
+    "actual": 5821
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "FEBRUARY",
+    "target": 7624,
+    "actual": 5818
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "MARCH",
+    "target": 7637,
+    "actual": 5669
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "NOVEMBER",
+    "target": 10259,
+    "actual": 7197
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "DECEMBER",
+    "target": 11764,
+    "actual": 8789
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "JANUARY",
+    "target": 12136,
+    "actual": 9156
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "FEBRUARY",
+    "target": 12219,
+    "actual": 9244
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "MARCH",
+    "target": 11886,
+    "actual": 6787
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "SEPTEMBER",
+    "target": 5949,
+    "actual": 5055
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "OCTOBER",
+    "target": 5715,
+    "actual": 4805
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "NOVEMBER",
+    "target": 6796,
+    "actual": 5090
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "DECEMBER",
+    "target": 7317,
+    "actual": 6483
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "JANUARY",
+    "target": 7428,
+    "actual": 6388
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "FEBRUARY",
+    "target": 7392,
+    "actual": 6557
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2025-26",
+    "month": "MARCH",
+    "target": 7324,
+    "actual": 6585
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "APRIL",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "MAY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "JUNE",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "JULY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "AUGUST",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "SEPTEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "OCTOBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "NOVEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "DECEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "JANUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "FEBRUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "MARCH",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "APRIL",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "MAY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "JUNE",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "JULY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "AUGUST",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "SEPTEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "OCTOBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "NOVEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "DECEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "JANUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "FEBRUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "MARCH",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "APRIL",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "MAY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "JUNE",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "JULY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "AUGUST",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "SEPTEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "OCTOBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "NOVEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "DECEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "JANUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "FEBRUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "MARCH",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "APRIL",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "MAY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "JUNE",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "JULY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "AUGUST",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "SEPTEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "OCTOBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "NOVEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "DECEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "JANUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "FEBRUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "MARCH",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "APRIL",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "MAY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "JUNE",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "JULY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "AUGUST",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "SEPTEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "OCTOBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "NOVEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "DECEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "JANUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "FEBRUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "MARCH",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "APRIL",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "MAY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "JUNE",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "JULY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "AUGUST",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "SEPTEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "OCTOBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "NOVEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "DECEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "JANUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "FEBRUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2026-27",
+    "month": "MARCH",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "APRIL",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "MAY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "JUNE",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "JULY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "AUGUST",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "SEPTEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "OCTOBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "NOVEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "DECEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "JANUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "FEBRUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "MARCH",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "APRIL",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "MAY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "JUNE",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "JULY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "AUGUST",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "SEPTEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "OCTOBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "NOVEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "DECEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "JANUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "FEBRUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "MARCH",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "APRIL",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "MAY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "JUNE",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "JULY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "AUGUST",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "SEPTEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "OCTOBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "NOVEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "DECEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "JANUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "FEBRUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "MARCH",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "APRIL",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "MAY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "JUNE",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "JULY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "AUGUST",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "SEPTEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "OCTOBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "NOVEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "DECEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "JANUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "FEBRUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "MARCH",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "APRIL",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "MAY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "JUNE",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "JULY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "AUGUST",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "SEPTEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "OCTOBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "NOVEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "DECEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "JANUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "FEBRUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "MARCH",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "APRIL",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "MAY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "JUNE",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "JULY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "AUGUST",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "SEPTEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "OCTOBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "NOVEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "DECEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "JANUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "FEBRUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2027-28",
+    "month": "MARCH",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "APRIL",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "MAY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "JUNE",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "JULY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "AUGUST",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "SEPTEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "OCTOBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "NOVEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "DECEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "JANUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "FEBRUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "MARCH",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "APRIL",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "MAY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "JUNE",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "JULY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "AUGUST",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "SEPTEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "OCTOBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "NOVEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "DECEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "JANUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "FEBRUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "MARCH",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "APRIL",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "MAY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "JUNE",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "JULY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "AUGUST",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "SEPTEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "OCTOBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "NOVEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "DECEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "JANUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "FEBRUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "MARCH",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "APRIL",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "MAY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "JUNE",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "JULY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "AUGUST",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "SEPTEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "OCTOBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "NOVEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "DECEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "JANUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "FEBRUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "MARCH",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "APRIL",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "MAY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "JUNE",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "JULY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "AUGUST",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "SEPTEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "OCTOBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "NOVEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "DECEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "JANUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "FEBRUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "MARCH",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "APRIL",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "MAY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "JUNE",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "JULY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "AUGUST",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "SEPTEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "OCTOBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "NOVEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "DECEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "JANUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "FEBRUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2028-29",
+    "month": "MARCH",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "APRIL",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "MAY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "JUNE",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "JULY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "AUGUST",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "SEPTEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "OCTOBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "NOVEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "DECEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "JANUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "FEBRUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "BHAVNAGAR",
+    "district_code": "443",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "MARCH",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "APRIL",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "MAY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "JUNE",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "JULY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "AUGUST",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "SEPTEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "OCTOBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "NOVEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "DECEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "JANUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "FEBRUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DAHOD",
+    "district_code": "445",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "MARCH",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "APRIL",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "MAY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "JUNE",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "JULY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "AUGUST",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "SEPTEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "OCTOBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "NOVEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "DECEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "JANUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "FEBRUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DANG",
+    "district_code": "444",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "MARCH",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "APRIL",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "MAY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "JUNE",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "JULY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "AUGUST",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "SEPTEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "OCTOBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "NOVEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "DECEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "JANUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "FEBRUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "DEVBHUMI DWARKA",
+    "district_code": "674",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "MARCH",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "APRIL",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "MAY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "JUNE",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "JULY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "AUGUST",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "SEPTEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "OCTOBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "NOVEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "DECEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "JANUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "FEBRUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "JAMNAGAR",
+    "district_code": "447",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "MARCH",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "APRIL",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "MAY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "JUNE",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "JULY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "AUGUST",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "SEPTEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "OCTOBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "NOVEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "DECEMBER",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "JANUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "FEBRUARY",
+    "target": null,
+    "actual": null
+  },
+  {
+    "intervention_code": "NSWLD-01",
+    "district_name": "NARMADA",
+    "district_code": "452",
+    "periodicity": "Monthly",
+    "fy": "2029-30",
+    "month": "MARCH",
+    "target": null,
+    "actual": null
+  }
+]
