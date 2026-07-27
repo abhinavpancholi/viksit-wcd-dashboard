@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { Target, ListChecks, BarChart3, PhoneCall, ShieldCheck } from 'lucide-react'
+import { Target, ListChecks, BarChart3, PhoneCall } from 'lucide-react'
 import useWcdStore from '../../context/WcdStore'
 
 /**
@@ -82,6 +82,44 @@ function SidebarFooterWidget() {
   )
 }
 
+function ActiveFilters() {
+  const { selectedFY, selectedRegion, selectedDistrict, setFY, setRegion, setDistrict, resetFilters } = useWcdStore()
+
+  if (!selectedFY && !selectedRegion && !selectedDistrict) return null
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', padding: '0 16px', marginBottom: '16px' }}>
+      <div style={{ fontSize: '12px', textTransform: 'uppercase', color: '#ffffffff', fontWeight: 600, letterSpacing: '0.05em' }}>
+        Active Filters
+      </div>
+      <div style={{ display: 'flex', gap: '6px',color: '#cdcdcdff', fontWeight: 500, flexWrap: 'wrap' }}>
+        {selectedFY && (
+          <div className="wcd-chip wcd-chip--active" onClick={() => setFY(selectedFY)} style={{ cursor: 'pointer', fontSize: '11px', padding: '4px 8px' }}>
+            {selectedFY} ✕
+          </div>
+        )}
+        {selectedRegion && (
+          <div className="wcd-chip wcd-chip--active" onClick={() => setRegion(selectedRegion)} style={{ cursor: 'pointer', fontSize: '11px', padding: '4px 8px' }}>
+            {selectedRegion} ✕
+          </div>
+        )}
+        {selectedDistrict && (
+          <div className="wcd-chip wcd-chip--active" onClick={() => setDistrict(selectedDistrict)} style={{ cursor: 'pointer', fontSize: '11px', padding: '4px 8px' }}>
+            {selectedDistrict} ✕
+          </div>
+        )}
+        <div 
+          className="wcd-chip" 
+          style={{ backgroundColor: '#1e293b', color: '#cbd5e1', cursor: 'pointer', fontSize: '11px', padding: '4px 8px', border: '1px solid #334155' }}
+          onClick={resetFilters}
+        >
+          Clear all
+        </div>
+      </div>
+    </div>
+  )
+}
+
 export default function Sidebar({ topSlot = 'stat-cards' }) {
   return (
     <aside className="wcd-sidebar">
@@ -114,6 +152,7 @@ export default function Sidebar({ topSlot = 'stat-cards' }) {
             </NavLink>
           )
         ))}
+        <ActiveFilters /> 
       </nav>
 
       {/* Bottom Slot — Fills empty space with WCD Abhayam Helpline & Quick Stats */}

@@ -39,6 +39,7 @@ from collections import defaultdict
 SCRIPT_DIR = Path(__file__).parent
 PROJECT_ROOT = SCRIPT_DIR.parent
 EXCEL_PATH = PROJECT_ROOT / "WCD_templates.xlsx"
+REGION_MAP_PATH = PROJECT_ROOT / "gujarat_region_mapping.xlsx"
 OUT_DIR = PROJECT_ROOT / "public" / "data"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -193,9 +194,25 @@ for row in raw_12:
             "no_of_aw_urban": clean_int(row.get("No_of_AW_Urban")),
             "no_of_aw_rural": clean_int(row.get("L No_of_AW_rural")),
         }
+
+print("Loading gujarat_region_mapping.xlsx...")
+wb_region = openpyxl.load_workbook(str(REGION_MAP_PATH), read_only=True, data_only=True)
+ws_region = wb_region.active
+region_rows = list(ws_region.iter_rows(values_only=True))
+region_dict = {}
+for r in region_rows[1:]:
+    if r[2] is not None:
+        region_dict[str(r[2]).strip()] = clean_str(r[0])
+
 districts_list = sorted(districts_map.values(), key=lambda d: d["district_name"] or "")
+
+# Add region to districts
+for d in districts_list:
+    d["region"] = region_dict.get(d["district_code"])
+
 write_json("districts.json", districts_list)
-print(f"  districts.json: {len(districts_list)} districts")
+write_json("regions.json", districts_list)
+print(f"  districts.json / regions.json: {len(districts_list)} districts with regions")
 
 # ===========================================================================
 # 2. NSWLD-01.json — AYUSH THR (6 pilot districts)
