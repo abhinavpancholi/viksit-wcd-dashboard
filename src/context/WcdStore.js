@@ -5,7 +5,7 @@ import { create } from 'zustand'
  * Loads JSON data files produced by the ETL script (wcd_etl.py).
  * Files sourced from NSWLD-01 through NSWLD-34 + compiled + config + aggregates.
  */
-const useWcdStore = create((set) => ({
+const useWcdStore = create((set, get) => ({
   // State
   loading: true,
   error: null,
@@ -13,13 +13,14 @@ const useWcdStore = create((set) => ({
   districts: null,       // districts.json (with regions)
   overviewAggregates: null, // NSWLD-overview-aggregates.json
   gujaratTopo: null,     // gujarat.json (TopoJSON)
-  
+
   // Raw Data for filtering
   rawAyush: null,        // NSWLD-01.json
   rawBbbp: null,         // NSWLD-10.json
   rawVahali: null,       // NSWLD-10_2.json
   rawGirls: null,        // NSWLD-12.json
-  rawCompiled: null,     // NSWLD-compiled.json
+  compiledRollup: null,  // compiled-region-district-rollup.json
+  compiledDistricts: {}, // per-district cache: { [dist_code]: [...] }
 
   // Filter State
   selectedFY: null,
@@ -31,7 +32,7 @@ const useWcdStore = create((set) => ({
     try {
       set({ loading: true, error: null })
 
-      const [configRes, districtsRes, aggregatesRes, topoRes, ayushRes, bbbpRes, vahaliRes, girlsRes, compiledRes] = await Promise.all([
+      const [configRes, districtsRes, aggregatesRes, topoRes, ayushRes, bbbpRes, vahaliRes, girlsRes, compiledRollupRes, mangalRes, poshanRes] = await Promise.all([
         fetch('/data/wcdConfig.json'),
         fetch('/data/districts.json'),
         fetch('/data/NSWLD-overview-aggregates.json'),
@@ -40,14 +41,16 @@ const useWcdStore = create((set) => ({
         fetch('/data/NSWLD-10.json'),
         fetch('/data/NSWLD-10_2.json'),
         fetch('/data/NSWLD-12.json'),
-        fetch('/data/NSWLD-compiled.json'),
+        fetch('/data/compiled-region-district-rollup.json'),
+        fetch('/data/NSWLD-02.json'),
+        fetch('/data/NSWLD-13.json'),
       ])
 
-      if (!configRes.ok || !districtsRes.ok || !aggregatesRes.ok || !topoRes.ok || !ayushRes.ok || !bbbpRes.ok || !vahaliRes.ok || !girlsRes.ok || !compiledRes.ok) {
+      if (!configRes.ok || !districtsRes.ok || !aggregatesRes.ok || !topoRes.ok || !ayushRes.ok || !bbbpRes.ok || !vahaliRes.ok || !girlsRes.ok || !compiledRollupRes.ok || !mangalRes.ok || !poshanRes.ok) {
         throw new Error('Failed to load one or more data files')
       }
 
-      const [config, districts, overviewAggregates, gujaratTopo, rawAyush, rawBbbp, rawVahali, rawGirls, rawCompiled] = await Promise.all([
+      const [config, districts, overviewAggregates, gujaratTopo, rawAyush, rawBbbp, rawVahali, rawGirls, compiledRollup, rawMangal, rawPoshan] = await Promise.all([
         configRes.json(),
         districtsRes.json(),
         aggregatesRes.json(),
@@ -56,7 +59,9 @@ const useWcdStore = create((set) => ({
         bbbpRes.json(),
         vahaliRes.json(),
         girlsRes.json(),
-        compiledRes.json(),
+        compiledRollupRes.json(),
+        mangalRes.json(),
+        poshanRes.json(),
       ])
 
       set({
@@ -68,12 +73,37 @@ const useWcdStore = create((set) => ({
         rawBbbp,
         rawVahali,
         rawGirls,
-        rawCompiled,
+        compiledRollup,
+        rawMangal,
+        rawPoshan,
         loading: false,
       })
     } catch (err) {
       console.error('WCD Store init error:', err)
       set({ error: err.message, loading: false })
+    }
+  },
+
+  loadCompiledDistrict: async (dist_code) => {
+    if (!dist_code) return [];
+    const { compiledDistricts } = get();
+    if (compiledDistricts[dist_code]) {
+      return compiledDistricts[dist_code];
+    }
+    try {
+      const res = await fetch(`/data/compiled-district/${dist_code}.json`);
+      if (!res.ok) throw new Error(`Failed to load compiled district data for ${dist_code}`);
+      const data = await res.json();
+      set((state) => ({
+        compiledDistricts: {
+          ...state.compiledDistricts,
+          [dist_code]: data
+        }
+      }));
+      return data;
+    } catch (err) {
+      console.error(`Error loading compiled district ${dist_code}:`, err);
+      return [];
     }
   },
 
@@ -91,11 +121,11 @@ const useWcdStore = create((set) => ({
       // Toggle off district, keep region as is
       return { selectedDistrict: null };
     }
-    
+
     // Find the region for this district
     const districtObj = state.districts?.find(d => d.district_name === district);
     const region = districtObj ? districtObj.region : state.selectedRegion;
-    
+
     return {
       selectedDistrict: district,
       selectedRegion: region
