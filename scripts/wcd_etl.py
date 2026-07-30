@@ -39,6 +39,7 @@ from collections import defaultdict
 SCRIPT_DIR = Path(__file__).parent
 PROJECT_ROOT = SCRIPT_DIR.parent
 EXCEL_PATH = PROJECT_ROOT / "WCD_templates.xlsx"
+REGION_MAP_PATH = PROJECT_ROOT / "gujarat_region_mapping.xlsx"
 OUT_DIR = PROJECT_ROOT / "public" / "data"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -193,9 +194,25 @@ for row in raw_12:
             "no_of_aw_urban": clean_int(row.get("No_of_AW_Urban")),
             "no_of_aw_rural": clean_int(row.get("L No_of_AW_rural")),
         }
+
+print("Loading gujarat_region_mapping.xlsx...")
+wb_region = openpyxl.load_workbook(str(REGION_MAP_PATH), read_only=True, data_only=True)
+ws_region = wb_region.active
+region_rows = list(ws_region.iter_rows(values_only=True))
+region_dict = {}
+for r in region_rows[1:]:
+    if r[2] is not None:
+        region_dict[str(r[2]).strip()] = clean_str(r[0])
+
 districts_list = sorted(districts_map.values(), key=lambda d: d["district_name"] or "")
+
+# Add region to districts
+for d in districts_list:
+    d["region"] = region_dict.get(d["district_code"])
+
 write_json("districts.json", districts_list)
-print(f"  districts.json: {len(districts_list)} districts")
+write_json("regions.json", districts_list)
+print(f"  districts.json / regions.json: {len(districts_list)} districts with regions")
 
 # ===========================================================================
 # 2. NSWLD-01.json — AYUSH THR (6 pilot districts)
@@ -469,41 +486,227 @@ for row in raw_34:
 write_json("NSWLD-34.json", nswld_34)
 print(f"  NSWLD-34.json: {len(nswld_34)} rows")
 
-# ===========================================================================
-# 15. NSWLD-compiled.json — Anganwadi data pre-aggregated to district+month
-# ===========================================================================
-print("\n--- Processing NSWLD-compiled.json (aggregating ~106k rows) ---")
-raw_compiled = read_sheet(wb, "compiled")
-agg = defaultdict(lambda: {"female": 0, "male": 0, "total": 0, "district_code": None})
-for row in raw_compiled:
-    dist = normalize_district(row.get("Dist_Name"))
-    month_raw = row.get("Month")
-    if dist is None or month_raw is None:
-        continue
-    month_str = str(month_raw).strip()
-    if len(month_str) >= 7:
-        month_key = month_str[:7]
-    else:
-        month_key = month_str
-    key = (dist, month_key)
-    agg[key]["female"] += clean_int(row.get("Female")) or 0
-    agg[key]["male"] += clean_int(row.get("Male")) or 0
-    agg[key]["total"] += clean_int(row.get("Total")) or 0
-    if agg[key]["district_code"] is None:
-        agg[key]["district_code"] = clean_str(row.get("dist_code"))
+def build_compiled_outputs(wb, region_dict, districts_map):
+    """
+    Build granular rollups for 'compiled' sheet SAM data (Step 1):
+      - compiled-region-district-rollup.json (40 flat rows: 1 state + 6 region + 33 district)
+      - compiled-district/{dist_code}.json (33 per-district files containing pivoted anganwadis)
+    """
+    print("\n--- Processing compiled-region-district-rollup.json & per-district JSONs (Step 1) ---")
+    raw_compiled = read_sheet(wb, "compiled")
+    
+    APRIL_VAL = '2025-04-01 00:00:00'
+    OCTOBER_VAL = '2025-10-01 00:00:00'
 
-compiled = []
-for (dist, month), vals in sorted(agg.items()):
-    compiled.append({
-        "district_name": dist,
-        "district_code": vals["district_code"],
-        "month": month,
-        "female": vals["female"],
-        "male": vals["male"],
-        "total": vals["total"],
+    # Pivot per physical anganwadi: key = (dist_code, Block_Name, Sector_Name, Anganwadi_Name)
+    anganwadi_pivot = defaultdict(lambda: {
+        "female_apr": 0, "male_apr": 0,
+        "female_oct": 0, "male_oct": 0
     })
-write_json("NSWLD-compiled.json", compiled)
-print(f"  NSWLD-compiled.json: {len(compiled)} aggregated rows (from {len(raw_compiled)} raw rows)")
+
+    for row in raw_compiled:
+        month_val = row.get("Month")
+        if month_val is None:
+            continue
+        month_str = str(month_val).strip()
+        if month_str not in (APRIL_VAL, OCTOBER_VAL):
+            continue
+
+        dc = clean_str(row.get("dist_code"))
+        if not dc:
+            continue
+
+        block = clean_str(row.get("Block_Name")) or ""
+        sector = clean_str(row.get("Sector_Name")) or ""
+        aw = clean_str(row.get("Anganwadi_Name")) or ""
+
+        female = clean_int(row.get("Female")) or 0
+        male = clean_int(row.get("Male")) or 0
+
+        key = (dc, block, sector, aw)
+        if month_str == APRIL_VAL:
+            anganwadi_pivot[key]["female_apr"] = female
+            anganwadi_pivot[key]["male_apr"] = male
+        elif month_str == OCTOBER_VAL:
+            anganwadi_pivot[key]["female_oct"] = female
+            anganwadi_pivot[key]["male_oct"] = male
+
+    # Organize anganwadi records per district
+    district_anganwadis = defaultdict(list)
+    for (dc, block, sector, aw), vals in anganwadi_pivot.items():
+        f_apr = vals["female_apr"]
+        m_apr = vals["male_apr"]
+        f_oct = vals["female_oct"]
+        m_oct = vals["male_oct"]
+        f_delta = f_apr - f_oct
+        m_delta = m_apr - m_oct
+        t_delta = f_delta + m_delta
+
+        district_anganwadis[dc].append({
+            "block_name": block,
+            "anganwadi_name": aw,
+            "female_apr": f_apr,
+            "male_apr": m_apr,
+            "female_oct": f_oct,
+            "male_oct": m_oct,
+            "female_delta": f_delta,
+            "male_delta": m_delta,
+            "total_delta": t_delta
+        })
+
+    # Write OUTPUT 2: public/data/compiled-district/{dist_code}.json (33 files)
+    compiled_dist_dir = OUT_DIR / "compiled-district"
+    compiled_dist_dir.mkdir(parents=True, exist_ok=True)
+
+    for dc, aw_list in district_anganwadis.items():
+        aw_list.sort(key=lambda x: (x["block_name"], x["anganwadi_name"]))
+        district_file_rows = []
+        for idx, item in enumerate(aw_list, start=1):
+            district_file_rows.append({
+                "id": f"{dc}-{idx}",
+                "block_name": item["block_name"],
+                "anganwadi_name": item["anganwadi_name"],
+                "female_apr": item["female_apr"],
+                "male_apr": item["male_apr"],
+                "female_oct": item["female_oct"],
+                "male_oct": item["male_oct"],
+                "female_delta": item["female_delta"],
+                "male_delta": item["male_delta"],
+                "total_delta": item["total_delta"]
+            })
+        file_path = compiled_dist_dir / f"{dc}.json"
+        with open(file_path, "w", encoding="utf-8") as f:
+            json.dump(district_file_rows, f, indent=2, ensure_ascii=False)
+
+    # Compute district rollups
+    district_rollups = {}
+    for dc, aw_list in district_anganwadis.items():
+        f_apr = sum(item["female_apr"] for item in aw_list)
+        m_apr = sum(item["male_apr"] for item in aw_list)
+        f_oct = sum(item["female_oct"] for item in aw_list)
+        m_oct = sum(item["male_oct"] for item in aw_list)
+        f_delta = f_apr - f_oct
+        m_delta = m_apr - m_oct
+        t_delta = f_delta + m_delta
+
+        d_info = districts_map.get(dc, {})
+        d_name = d_info.get("district_name") or dc
+        reg_name = region_dict.get(dc)
+
+        district_rollups[dc] = {
+            "level": "district",
+            "name": d_name,
+            "region": reg_name,
+            "dist_code": dc,
+            "female_apr": f_apr,
+            "male_apr": m_apr,
+            "female_oct": f_oct,
+            "male_oct": m_oct,
+            "female_delta": f_delta,
+            "male_delta": m_delta,
+            "total_delta": t_delta
+        }
+
+    # Region rollups
+    region_rollups = defaultdict(lambda: {
+        "female_apr": 0, "male_apr": 0,
+        "female_oct": 0, "male_oct": 0
+    })
+    for d_row in district_rollups.values():
+        reg = d_row["region"]
+        region_rollups[reg]["female_apr"] += d_row["female_apr"]
+        region_rollups[reg]["male_apr"] += d_row["male_apr"]
+        region_rollups[reg]["female_oct"] += d_row["female_oct"]
+        region_rollups[reg]["male_oct"] += d_row["male_oct"]
+
+    region_rows_list = []
+    for reg_name in sorted(region_rollups.keys()):
+        vals = region_rollups[reg_name]
+        f_apr = vals["female_apr"]
+        m_apr = vals["male_apr"]
+        f_oct = vals["female_oct"]
+        m_oct = vals["male_oct"]
+        f_delta = f_apr - f_oct
+        m_delta = m_apr - m_oct
+        t_delta = f_delta + m_delta
+        region_rows_list.append({
+            "level": "region",
+            "name": reg_name,
+            "region": reg_name,
+            "dist_code": None,
+            "female_apr": f_apr,
+            "male_apr": m_apr,
+            "female_oct": f_oct,
+            "male_oct": m_oct,
+            "female_delta": f_delta,
+            "male_delta": m_delta,
+            "total_delta": t_delta
+        })
+
+    # State rollup
+    s_f_apr = sum(d["female_apr"] for d in district_rollups.values())
+    s_m_apr = sum(d["male_apr"] for d in district_rollups.values())
+    s_f_oct = sum(d["female_oct"] for d in district_rollups.values())
+    s_m_oct = sum(d["male_oct"] for d in district_rollups.values())
+    s_f_delta = s_f_apr - s_f_oct
+    s_m_delta = s_m_apr - s_m_oct
+    s_t_delta = s_f_delta + s_m_delta
+
+    state_row = {
+        "level": "state",
+        "name": "Gujarat",
+        "region": None,
+        "dist_code": None,
+        "female_apr": s_f_apr,
+        "male_apr": s_m_apr,
+        "female_oct": s_f_oct,
+        "male_oct": s_m_oct,
+        "female_delta": s_f_delta,
+        "male_delta": s_m_delta,
+        "total_delta": s_t_delta
+    }
+
+    dist_rows_list = sorted(district_rollups.values(), key=lambda x: x["name"])
+
+    # OUTPUT 1: public/data/compiled-region-district-rollup.json
+    flat_rollup = [state_row] + region_rows_list + dist_rows_list
+    write_json("compiled-region-district-rollup.json", flat_rollup)
+
+    # Verification printing
+    print(f"  compiled-region-district-rollup.json: {len(flat_rollup)} rows written")
+    print(f"  compiled-district/*.json: {len(district_anganwadis)} files written")
+
+    print("\n--- STEP 1 VERIFICATION OUTPUTS ---")
+    print("\n1. STATE ROW:")
+    print(json.dumps(state_row, indent=2))
+
+    print(f"\n2. REGION ROWS ({len(region_rows_list)} total):")
+    for r_row in region_rows_list:
+        print(json.dumps(r_row))
+
+    print(f"\n3. DISTRICT ROWS ({len(dist_rows_list)} total):")
+    for d_row in dist_rows_list:
+        print(json.dumps(d_row))
+
+    sum_f_delta = sum(d["female_delta"] for d in dist_rows_list)
+    sum_m_delta = sum(d["male_delta"] for d in dist_rows_list)
+    print(f"\n4. SUM OF 33 DISTRICT DELTAS:")
+    print(f"   female_delta sum: {sum_f_delta} (expected 5850)")
+    print(f"   male_delta sum:   {sum_m_delta} (expected 8378)")
+
+    sample_dc = sorted(district_anganwadis.keys())[0]
+    sample_file = compiled_dist_dir / f"{sample_dc}.json"
+    with open(sample_file, "r", encoding="utf-8") as f:
+        sample_data = json.load(f)
+
+    print(f"\n5. SAMPLE PER-DISTRICT FILE FIRST 5 ROWS ({sample_file.name}):")
+    print(json.dumps(sample_data[:5], indent=2))
+
+    dist_files = list(compiled_dist_dir.glob("*.json"))
+    print(f"\n6. TOTAL PER-DISTRICT FILES COUNT: {len(dist_files)} in {compiled_dist_dir}")
+
+
+build_compiled_outputs(wb, region_dict, districts_map)
 
 # ===========================================================================
 # 16. wcdConfig.json — Static config

@@ -6,7 +6,11 @@ import * as topojson from 'topojson-client'
  * Gujarat District Choropleth Map — Light Theme
  */
 
-export default function VahaliDikariMap({ topoData, districtData }) {
+export default function VahaliDikariMap({ 
+  topoData, districtData, districts,
+  selectedRegion, selectedDistrict,
+  onDistrictClick
+}) {
   const svgRef = useRef(null)
   const tooltipRef = useRef(null)
   const [dimensions, setDimensions] = useState({ width: 260, height: 180 })
@@ -15,7 +19,7 @@ export default function VahaliDikariMap({ topoData, districtData }) {
     const map = new Map()
     if (!districtData) return map
     districtData.forEach(d => {
-      map.set(d.district_name_topo, d.total)
+      map.set(d.name.toUpperCase(), { total: d.total, inRegion: d.inRegion })
     })
     return map
   }, [districtData])
@@ -35,40 +39,75 @@ export default function VahaliDikariMap({ topoData, districtData }) {
     const width = dimensions.width
     const height = dimensions.height
 
-    const geojson = topojson.feature(topoData, topoData.objects.districts)
-    const projection = d3.geoMercator().fitSize([width - 16, height - 16], geojson)
-    const pathGenerator = d3.geoPath().projection(projection)
-
-    // Vibrant Light-Theme Color Scale (Soft Light Blue -> Deep Royal Blue)
     const colorScale = d3.scaleSequential()
       .domain([minVal, maxVal])
       .interpolator(d3.interpolateRgbBasis(['#e0f2fe', '#38bdf8', '#0284c7', '#0369a1']))
 
     const g = svg.append('g').attr('transform', 'translate(8,8)')
 
+    const featureCollection = topojson.feature(topoData, topoData.objects.districts);
+    const projection = d3.geoMercator().fitSize([width - 16, height - 16], featureCollection);
+    const pathGenerator = d3.geoPath().projection(projection);
+
+    const getBackendDistrictName = (topoName) => {
+      if (!districts) return topoName.toUpperCase();
+      const d = districts.find(d => d.district_name.replace(/ /g, '').includes(topoName.toUpperCase().replace(/ /g, '')) || topoName.toUpperCase().includes(d.district_name.replace(/ /g, '')));
+      const HARDCODED_MAP = {
+        "Ahmedabad": "AHMADABAD", "Amreli": "AMRELI", "Anand": "ANAND", "Aravalli": "ARVALLI",
+        "Banaskantha": "BANAS KANTHA", "Bharuch": "BHARUCH", "Bhavnagar": "BHAVNAGAR", "Botad": "BOTAD",
+        "Chhota Udaipur": "CHHOTAUDEPUR", "Dahod": "DAHOD", "Dang": "DANG", "Devbhumi Dwarka": "DEVBHUMI DWARKA",
+        "Gandhinagar": "GANDHINAGAR", "Gir Somnath": "GIR SOMNATH", "Jamnagar": "JAMNAGAR", "Junagadh": "JUNAGADH",
+        "Kutch": "KACHCHH", "Kheda": "KHEDA", "Mehsana": "MAHESANA", "Morbi": "MORBI", "Mahisagar": "MAHISAGAR",
+        "Narmada": "NARMADA", "Navsari": "NAVSARI", "Panchmahal": "PANCH MAHALS", "Patan": "PATAN",
+        "Porbandar": "PORBANDAR", "Rajkot": "RAJKOT", "Sabarkantha": "SABAR KANTHA", "Surat": "SURAT",
+        "Surendranagar": "SURENDRANAGAR", "Tapi": "TAPI", "Vadodara": "VADODARA", "Valsad": "VALSAD"
+      };
+      return d ? d.district_name : (HARDCODED_MAP[topoName] || topoName.toUpperCase());
+    }
+
     g.selectAll('path')
-      .data(geojson.features)
+      .data(featureCollection.features)
       .join('path')
       .attr('d', pathGenerator)
       .attr('fill', (d) => {
-        const name = d.properties.district
-        const val = dataMap.get(name)
-        return val != null ? colorScale(val) : '#f1f5f9'
+        const backendName = getBackendDistrictName(d.properties.district)
+        const valData = dataMap.get(backendName)
+        return valData != null && valData.total != null ? colorScale(valData.total) : '#f1f5f9'
       })
-      .attr('stroke', '#ffffff')
-      .attr('stroke-width', 1)
+      .attr('stroke', (d) => {
+        const backendName = getBackendDistrictName(d.properties.district)
+        return selectedDistrict && selectedDistrict === backendName ? '#0f172a' : '#ffffff'
+      })
+      .attr('stroke-width', (d) => {
+        const backendName = getBackendDistrictName(d.properties.district)
+        return selectedDistrict && selectedDistrict === backendName ? 2 : 1
+      })
       .attr('cursor', 'pointer')
       .style('transition', 'all 0.15s ease')
+      .style('opacity', (d) => {
+        const backendName = getBackendDistrictName(d.properties.district)
+        const valData = dataMap.get(backendName)
+        const inRegion = valData ? valData.inRegion : true
+        if (selectedDistrict) {
+          return selectedDistrict === backendName ? 1 : 0.3
+        }
+        if (selectedRegion && !inRegion) {
+          return 0.3
+        }
+        return 1
+      })
       .on('mouseenter', function (event, d) {
-        d3.select(this).attr('stroke', '#0f172a').attr('stroke-width', 1.8)
-        const name = d.properties.district
-        const val = dataMap.get(name)
+        const backendName = getBackendDistrictName(d.properties.district)
+        if (selectedDistrict !== backendName) {
+          d3.select(this).attr('stroke', '#0f172a').attr('stroke-width', 1.8)
+        }
+        const valData = dataMap.get(backendName)
         const tooltip = tooltipRef.current
         if (tooltip) {
           tooltip.style.opacity = '1'
           tooltip.innerHTML = `
-            <div style="font-weight:700;margin-bottom:2px;color:#0f172a">${name}</div>
-            <div style="color:#0284c7">Beneficiaries: <strong>${val != null ? val.toLocaleString('en-IN') : 'N/A'}</strong></div>
+            <div style="font-weight:700;margin-bottom:2px;color:#0f172a">${d.properties.district}</div>
+            <div style="color:#0284c7">Beneficiaries: <strong>${valData && valData.total != null ? valData.total.toLocaleString('en-IN') : 'N/A'}</strong></div>
           `
         }
       })
@@ -80,15 +119,22 @@ export default function VahaliDikariMap({ topoData, districtData }) {
           tooltip.style.top = `${event.clientY - rect.top - 10}px`
         }
       })
-      .on('mouseleave', function () {
-        d3.select(this).attr('stroke', '#ffffff').attr('stroke-width', 1)
+      .on('mouseleave', function (event, d) {
+        const backendName = getBackendDistrictName(d.properties.district)
+        if (selectedDistrict !== backendName) {
+          d3.select(this).attr('stroke', '#ffffff').attr('stroke-width', 1)
+        }
         const tooltip = tooltipRef.current
         if (tooltip) {
           tooltip.style.opacity = '0'
         }
       })
+      .on('click', function(event, d) {
+        const backendName = getBackendDistrictName(d.properties.district)
+        if (onDistrictClick) onDistrictClick(backendName)
+      })
 
-  }, [topoData, dataMap, dimensions, minVal, maxVal])
+  }, [topoData, dataMap, dimensions, minVal, maxVal, selectedRegion, selectedDistrict, districts, onDistrictClick])
 
   const containerRef = useRef(null)
   useEffect(() => {
@@ -107,11 +153,11 @@ export default function VahaliDikariMap({ topoData, districtData }) {
   }, [])
 
   return (
-    <div className="wcd-chart-panel" style={{ height: '100%' }}>
+    <div className="wcd-chart-panel" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
       <div className="wcd-chart-panel__title">
         <span>Vahali Dikari Spread Across State</span>
       </div>
-      <div ref={containerRef} className="wcd-map-container" style={{ position: 'relative' }}>
+      <div ref={containerRef} className="wcd-map-container" style={{ position: 'relative', flex: 1, minHeight: 0 }}>
         <svg
           ref={svgRef}
           width={dimensions.width}

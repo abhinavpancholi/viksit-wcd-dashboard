@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import useWcdStore from './context/WcdStore'
 import Overview from './pages/Overview'
+import HealthNutrition from './pages/HealthNutrition'
 
 /**
  * WCD Dashboard — App Root
@@ -118,7 +119,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Overview />} />
-        {/* Future pages will be added here */}
+        <Route path="/health" element={<HealthNutrition />} />
       </Routes>
     </BrowserRouter>
   )
