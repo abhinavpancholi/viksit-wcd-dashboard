@@ -19,6 +19,9 @@ const useWcdStore = create((set, get) => ({
   rawBbbp: null,         // NSWLD-10.json
   rawVahali: null,       // NSWLD-10_2.json
   rawGirls: null,        // NSWLD-12.json
+  rawSensitizationState: null, // NSWLD-29.json
+  rawSetu: null,         // NSWLD-30.json
+  rawSexualHarassment: null, // NSWLD-34.json
   compiledRollup: null,  // compiled-region-district-rollup.json
   compiledDistricts: {}, // per-district cache: { [dist_code]: [...] }
 
@@ -32,7 +35,12 @@ const useWcdStore = create((set, get) => ({
     try {
       set({ loading: true, error: null })
 
-      const [configRes, districtsRes, aggregatesRes, topoRes, ayushRes, bbbpRes, vahaliRes, girlsRes, compiledRollupRes, mangalRes, poshanRes] = await Promise.all([
+      const [
+        configRes, districtsRes, aggregatesRes, topoRes,
+        ayushRes, bbbpRes, vahaliRes, girlsRes,
+        compiledRollupRes, mangalRes, poshanRes,
+        sensitizationStateRes, setuRes, sexualHarassmentRes
+      ] = await Promise.all([
         fetch('/data/wcdConfig.json'),
         fetch('/data/districts.json'),
         fetch('/data/NSWLD-overview-aggregates.json'),
@@ -44,13 +52,21 @@ const useWcdStore = create((set, get) => ({
         fetch('/data/compiled-region-district-rollup.json'),
         fetch('/data/NSWLD-02.json'),
         fetch('/data/NSWLD-13.json'),
+        fetch('/data/NSWLD-29.json'),
+        fetch('/data/NSWLD-30.json'),
+        fetch('/data/NSWLD-34.json'),
       ])
 
-      if (!configRes.ok || !districtsRes.ok || !aggregatesRes.ok || !topoRes.ok || !ayushRes.ok || !bbbpRes.ok || !vahaliRes.ok || !girlsRes.ok || !compiledRollupRes.ok || !mangalRes.ok || !poshanRes.ok) {
+      if (!configRes.ok || !districtsRes.ok || !aggregatesRes.ok || !topoRes.ok || !ayushRes.ok || !bbbpRes.ok || !vahaliRes.ok || !girlsRes.ok || !compiledRollupRes.ok || !mangalRes.ok || !poshanRes.ok || !sensitizationStateRes.ok || !setuRes.ok || !sexualHarassmentRes.ok) {
         throw new Error('Failed to load one or more data files')
       }
 
-      const [config, districts, overviewAggregates, gujaratTopo, rawAyush, rawBbbp, rawVahali, rawGirls, compiledRollup, rawMangal, rawPoshan] = await Promise.all([
+      const [
+        config, districts, overviewAggregates, gujaratTopo,
+        rawAyush, rawBbbp, rawVahali, rawGirls,
+        compiledRollup, rawMangal, rawPoshan,
+        rawSensitizationState, rawSetu, rawSexualHarassment
+      ] = await Promise.all([
         configRes.json(),
         districtsRes.json(),
         aggregatesRes.json(),
@@ -62,6 +78,9 @@ const useWcdStore = create((set, get) => ({
         compiledRollupRes.json(),
         mangalRes.json(),
         poshanRes.json(),
+        sensitizationStateRes.json(),
+        setuRes.json(),
+        sexualHarassmentRes.json(),
       ])
 
       set({
@@ -76,6 +95,9 @@ const useWcdStore = create((set, get) => ({
         compiledRollup,
         rawMangal,
         rawPoshan,
+        rawSensitizationState,
+        rawSetu,
+        rawSexualHarassment,
         loading: false,
       })
     } catch (err) {

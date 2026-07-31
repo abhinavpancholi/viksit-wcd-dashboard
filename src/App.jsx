@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import useWcdStore from './context/WcdStore'
 import Overview from './pages/Overview'
 import HealthNutrition from './pages/HealthNutrition'
+import AwarenessBehaviour from './pages/AwarenessBehaviour'
 
 /**
  * WCD Dashboard — App Root
@@ -120,6 +121,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Overview />} />
         <Route path="/health" element={<HealthNutrition />} />
+        <Route path="/awareness" element={<AwarenessBehaviour />} />
       </Routes>
     </BrowserRouter>
   )

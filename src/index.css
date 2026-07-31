@@ -504,7 +504,7 @@ html, body {
   background: var(--wcd-bg-card);
   border: 1px solid var(--wcd-border);
   border-radius: var(--wcd-radius-md);
-  padding: 10px 14px;
+  padding: 8px 8px;
   box-shadow: var(--wcd-shadow-card);
   display: flex;
   flex-direction: column;
