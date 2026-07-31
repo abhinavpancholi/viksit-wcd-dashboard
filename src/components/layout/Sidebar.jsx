@@ -8,7 +8,7 @@ const NAV_ITEMS = [
   { label: 'Overview', to: '/', disabled: false },
   { label: 'Health & Adolescent Nutrition', to: '/health', disabled: false },
   { label: 'Awareness & Behaviour Change', to: '/awareness', disabled: false },
-  { label: 'Infra, Digital Platforms & Women Empowerment', to: '/infra', disabled: true },
+  { label: 'Infra, Digital Platforms & Women Empowerment', to: '/infra', disabled: false },
 ]
 
 const FY_OPTIONS = [

@@ -4,6 +4,7 @@ import useWcdStore from './context/WcdStore'
 import Overview from './pages/Overview'
 import HealthNutrition from './pages/HealthNutrition'
 import AwarenessBehaviour from './pages/AwarenessBehaviour'
+import InfraWomenEmpowerment from './pages/InfraWomenEmpowerment'
 
 /**
  * WCD Dashboard — App Root
@@ -122,6 +123,7 @@ function App() {
         <Route path="/" element={<Overview />} />
         <Route path="/health" element={<HealthNutrition />} />
         <Route path="/awareness" element={<AwarenessBehaviour />} />
+        <Route path="/infra" element={<InfraWomenEmpowerment />} />
       </Routes>
     </BrowserRouter>
   )
