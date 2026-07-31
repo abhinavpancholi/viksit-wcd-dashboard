@@ -4,7 +4,7 @@ import { Target, ListChecks, BarChart3, MapPin, X } from 'lucide-react'
 import useWcdStore from '../../context/WcdStore'
 
 const NAV_ITEMS = [
-  { label: 'Summary', to: '/summary', disabled: true },
+  // { label: 'Summary', to: '/summary', disabled: true },
   { label: 'Overview', to: '/', disabled: false },
   { label: 'Health & Adolescent Nutrition', to: '/health', disabled: false },
   { label: 'Awareness & Behaviour Change', to: '/awareness', disabled: false },

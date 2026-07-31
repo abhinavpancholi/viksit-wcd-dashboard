@@ -70,17 +70,20 @@ export default function MSYSubsidyCombo({ data }) {
               iconSize={8}
             />
             <Area
+              type="monotone"
               dataKey="target"
               name="Target"
               stroke="#8b5cf6"
               fill="#ede9fe"
-              strokeWidth={2}
-              fillOpacity={0.5}
-              dot={{ fill: '#8b5cf6', r: 3 }}
+              strokeWidth={2.5}
+              fillOpacity={0.4}
+              dot={{ fill: '#8b5cf6', r: 4 }}
+              activeDot={{ r: 6 }}
             >
               <LabelList
                 dataKey="target"
-                position="top"
+                position="bottom"
+                offset={10}
                 fill="#7c3aed"
                 fontSize={8}
                 fontWeight={700}
@@ -88,21 +91,23 @@ export default function MSYSubsidyCombo({ data }) {
               />
             </Area>
             <Area
+              type="monotone"
               dataKey="actual"
               name="Actual"
               stroke="#0284c7"
               fill="#e0f2fe"
               strokeWidth={2.5}
-              fillOpacity={0.6}
-              dot={{ fill: '#0284c7', r: 3.5 }}
+              fillOpacity={0.4}
+              dot={{ fill: '#0284c7', r: 4 }}
+              activeDot={{ r: 6 }}
             >
               <LabelList
                 dataKey="actual"
                 position="top"
+                offset={10}
                 fill="#0369a1"
                 fontSize={8}
                 fontWeight={700}
-                offset={12}
                 formatter={(v) => v != null ? v.toFixed(2) : ''}
               />
             </Area>

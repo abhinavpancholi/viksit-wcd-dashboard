@@ -126,7 +126,7 @@ export default function InfraWomenEmpowerment() {
                 2022-23
               </div>
             </div>
-            <div className="wcd-kpi-card__detail">Static — not filtered by FY</div>
+            <div className="wcd-kpi-card__detail"></div>
           </div>
 
           {/* KPI 2 — Total Available Rescue Vans (NSWLD-08) */}

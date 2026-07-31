@@ -1,19 +1,12 @@
 import React from 'react'
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid,
-  Tooltip, ResponsiveContainer, Legend, LabelList, Cell
+  Tooltip, ResponsiveContainer, Legend, LabelList
 } from 'recharts'
 
 /**
- * Chart E — NSWLD-17(2): Number of Jagruti Shibir Sessions Conducted
- * Diverging/butterfly horizontal bar chart.
- *
- * Y-axis: FY
- * Target (lavender) extends LEFT of center (negated for bar positioning)
- * Actual (teal) extends RIGHT of center
- *
- * Data labels show absolute values (e.g. "48", not "-48").
- * The negation of Target is purely a layout trick, not a value to display.
+ * Chart E — NSWLD-17(2): Number of Jagruti shibir sessions conducted
+ * Grouped/clustered vertical column bar chart, Target (purple) vs Actual (blue).
  */
 
 function CustomTooltip({ active, payload, label }) {
@@ -23,7 +16,7 @@ function CustomTooltip({ active, payload, label }) {
       <div style={{ fontWeight: 700, marginBottom: 2 }}>FY {label}</div>
       {payload.map((p, i) => (
         <div key={i} style={{ color: p.color, fontSize: '0.72rem', marginTop: 2 }}>
-          {p.name}: <strong>{Math.abs(p.value).toLocaleString('en-IN')}</strong>
+          {p.name}: <strong>{Number(p.value).toLocaleString('en-IN')}</strong>
         </div>
       ))}
     </div>
@@ -49,12 +42,6 @@ export default function JagrutiSessionsButterfly({ data }) {
     )
   }
 
-  // Calculate domain for symmetric axis
-  const maxVal = Math.max(
-    ...data.map(d => Math.max(d.target, d.actual))
-  )
-  const domainMax = Math.ceil(maxVal * 1.25)
-
   return (
     <div className="wcd-chart-panel" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
       <div className="wcd-chart-panel__title" style={{ fontSize: '0.68rem', lineHeight: 1.3 }}>
@@ -62,64 +49,54 @@ export default function JagrutiSessionsButterfly({ data }) {
       </div>
       <div style={{ flex: 1, minHeight: 0 }}>
         <ResponsiveContainer width="100%" height="100%">
-          <BarChart
-            data={data}
-            layout="vertical"
-            margin={{ top: 5, right: 30, bottom: -5, left: 0 }}
-            stackOffset="sign"
-          >
-            <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" horizontal={false} />
+          <BarChart data={data} margin={{ top: 15, right: 10, bottom: -5, left: -15 }}>
+            <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" vertical={false} />
             <XAxis
-              type="number"
-              domain={[-domainMax, domainMax]}
-              tick={{ fill: '#64748b', fontSize: 9 }}
+              dataKey="name"
+              tick={{ fill: '#64748b', fontSize: 10, fontWeight: 500 }}
               axisLine={{ stroke: '#cbd5e1' }}
               tickLine={false}
-              tickFormatter={(v) => Math.abs(v)}
             />
             <YAxis
-              type="category"
-              dataKey="name"
-              tick={{ fill: '#334155', fontSize: 10, fontWeight: 600 }}
+              tick={{ fill: '#64748b', fontSize: 9 }}
               axisLine={false}
               tickLine={false}
-              width={65}
             />
             <Tooltip content={<CustomTooltip />} cursor={{ fill: '#f8fafc' }} />
             <Legend
               wrapperStyle={{ fontSize: '0.62rem', color: '#475569', paddingTop: 0 }}
               iconSize={8}
             />
-            {/* Target: negative bar extending left */}
             <Bar
-              dataKey="negTarget"
+              dataKey="target"
               name="Target"
               fill="#8b5cf6"
-              radius={[4, 0, 0, 4]}
-              maxBarSize={18}
+              radius={[3, 3, 0, 0]}
+              maxBarSize={28}
             >
               <LabelList
                 dataKey="target"
-                position="left"
+                position="top"
                 fill="#7c3aed"
                 fontSize={9}
                 fontWeight={700}
+                formatter={(v) => v > 0 ? Number(v).toLocaleString('en-IN') : ''}
               />
             </Bar>
-            {/* Actual: positive bar extending right */}
             <Bar
               dataKey="actual"
               name="Actual"
               fill="#0284c7"
-              radius={[0, 4, 4, 0]}
-              maxBarSize={18}
+              radius={[3, 3, 0, 0]}
+              maxBarSize={28}
             >
               <LabelList
                 dataKey="actual"
-                position="right"
+                position="top"
                 fill="#0369a1"
                 fontSize={9}
                 fontWeight={700}
+                formatter={(v) => v > 0 ? Number(v).toLocaleString('en-IN') : ''}
               />
             </Bar>
           </BarChart>
