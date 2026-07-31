@@ -90,14 +90,14 @@ export default function AyushThrChart({ data, selectedFY }) {
             <Bar
               dataKey="target_lakh"
               name="Target"
-              fill="#a78bfa"
+              fill="#8b5cf6"
               radius={[0, 4, 4, 0]}
               maxBarSize={14}
             >
               <LabelList
                 dataKey="target_lakh"
                 position="right"
-                fill="#6d28d9"
+                fill="#8b5cf6"
                 fontSize={9}
                 fontWeight={700}
                 formatter={(v) => v != null ? v.toFixed(2) : ''}
@@ -106,14 +106,14 @@ export default function AyushThrChart({ data, selectedFY }) {
             <Bar
               dataKey="actual_lakh"
               name="Actual"
-              fill="#2dd4bf"
+              fill="#0284c7"
               radius={[0, 4, 4, 0]}
               maxBarSize={14}
             >
               <LabelList
                 dataKey="actual_lakh"
                 position="right"
-                fill="#0f766e"
+                fill="#0284c7"
                 fontSize={9}
                 fontWeight={700}
                 formatter={(v) => v != null ? v.toFixed(2) : ''}

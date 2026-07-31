@@ -159,15 +159,15 @@ html, body {
   font-size: 0.95rem;
   font-weight: 800;
   color: #0f172a;
-  letter-spacing: -0.01em;
+  letter-spacing: 0.01em;
   line-height: 1.2;
 }
 
 .wcd-header__subtitle {
   font-family: var(--wcd-font-display);
-  font-size: 0.78rem;
+  font-size: 0.90rem;
   font-weight: 700;
-  color: var(--wcd-teal-600);
+  color: #0f172a;
 }
 
 .wcd-header__page-subtitle {

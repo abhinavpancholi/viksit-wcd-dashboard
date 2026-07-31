@@ -899,4 +899,223 @@ export function getSexualHarassmentSensitizationQuarterly(rawSexualHarassment, f
 }
 
 
+// ==========================================
+// Page 4 — Infra, Digital Platforms & Women Empowerment
+// Sheets: NSWLD-05, NSWLD-08, NSWLD-17, NSWLD-17(2)
+// ==========================================
 
+/**
+ * FYs with real (non-null) reported data for NSWLD-17 / NSWLD-17(2).
+ * Confirmed row-by-row: real data FY2022-23 → FY2025-26 only.
+ */
+const NSWLD17_REAL_FYS = ['2022-23', '2023-24', '2024-25', '2025-26'];
+
+/**
+ * NSWLD-08: Rescue Vans + 181 Helpline Response Time
+ * KPI 2 — Rescue Vans: March row of selected FY, field actual_rescue_vans
+ * KPI 3 — Response Time: March row of selected FY, actual/target response times
+ *
+ * Data-quality bug: Month is Title Case for all FYs except 2024-25 (ALL-CAPS).
+ * Normalize with .trim().toUpperCase() before matching "MARCH".
+ */
+export function getRescueVanMarchRow(rawRescue, selectedFY) {
+  if (!rawRescue || !selectedFY) return null;
+
+  const marchRow = rawRescue.find(
+    r => r.fy === selectedFY &&
+         r.month != null &&
+         r.month.trim().toUpperCase() === 'MARCH'
+  );
+  return marchRow || null;
+}
+
+/**
+ * Find the latest FY that has actual rescue van data in the March row.
+ * Used as the default FY for rescue/response-time KPIs when no FY selected.
+ */
+export function getLatestRescueFY(rawRescue) {
+  if (!rawRescue) return null;
+
+  // Collect all FYs that have a March row with non-null actual_rescue_vans
+  const fyWithActual = rawRescue
+    .filter(r => r.month != null &&
+                 r.month.trim().toUpperCase() === 'MARCH' &&
+                 r.actual_rescue_vans != null)
+    .map(r => r.fy);
+
+  if (fyWithActual.length === 0) return null;
+
+  // Sort FYs descending and return the latest
+  fyWithActual.sort((a, b) => b.localeCompare(a));
+  return fyWithActual[0];
+}
+
+/**
+ * NSWLD-17: Mahila Swavlamban Yojana — Chart A (Beneficiaries Target vs Actual)
+ * State-level sum across all 33 districts per FY.
+ *
+ * Fields: target_beneficiaries, actual_beneficiaries
+ */
+export function getMSYBeneficiariesByFY(rawMSY, selectedFY) {
+  if (!rawMSY) return [];
+
+  const fys = selectedFY ? [selectedFY] : NSWLD17_REAL_FYS;
+
+  return fys.map(fy => {
+    const rows = rawMSY.filter(r => r.fy === fy);
+    const target = rows.reduce((s, r) => s + (r.target_beneficiaries || 0), 0);
+    const actual = rows.reduce((s, r) => s + (r.actual_beneficiaries || 0), 0);
+
+    // Only include FYs with real data (at least one non-null value)
+    const hasData = rows.some(r => r.target_beneficiaries != null || r.actual_beneficiaries != null);
+    if (!hasData) return null;
+
+    return { name: fy, target, actual };
+  }).filter(Boolean);
+}
+
+/**
+ * NSWLD-17: Chart B — Average Amount Disbursed per beneficiary (in ₹)
+ * avgAmount = (SUM(actual_subsidy_amount) * 100000) / SUM(actual_beneficiaries)
+ * Guard divide-by-zero: if actual_beneficiaries sum is 0, return null for that FY.
+ *
+ * Fields: actual_subsidy_amount (in Lakh), actual_beneficiaries
+ */
+export function getMSYAvgSubsidyByFY(rawMSY, selectedFY) {
+  if (!rawMSY) return [];
+
+  const fys = selectedFY ? [selectedFY] : NSWLD17_REAL_FYS;
+
+  return fys.map(fy => {
+    const rows = rawMSY.filter(r => r.fy === fy);
+    const actualSubsidy = rows.reduce((s, r) => s + (r.actual_subsidy_amount || 0), 0);
+    const actualBeneficiaries = rows.reduce((s, r) => s + (r.actual_beneficiaries || 0), 0);
+
+    const hasData = rows.some(r => r.actual_subsidy_amount != null || r.actual_beneficiaries != null);
+    if (!hasData) return null;
+
+    // Guard divide-by-zero (matches Power BI DIVIDE returning blank)
+    const avg = actualBeneficiaries > 0
+      ? Math.round((actualSubsidy * 100000) / actualBeneficiaries)
+      : null;
+
+    return { name: fy, avg };
+  }).filter(Boolean);
+}
+
+/**
+ * NSWLD-17: Chart C — Subsidy Amount Disbursed (₹ in Lakh), Target vs Actual
+ * State-level sum across all 33 districts per FY.
+ *
+ * Fields: target_subsidy_amount, actual_subsidy_amount
+ */
+export function getMSYSubsidyByFY(rawMSY, selectedFY) {
+  if (!rawMSY) return [];
+
+  const fys = selectedFY ? [selectedFY] : NSWLD17_REAL_FYS;
+
+  return fys.map(fy => {
+    const rows = rawMSY.filter(r => r.fy === fy);
+    const target = rows.reduce((s, r) => s + (r.target_subsidy_amount || 0), 0);
+    const actual = rows.reduce((s, r) => s + (r.actual_subsidy_amount || 0), 0);
+
+    const hasData = rows.some(r => r.target_subsidy_amount != null || r.actual_subsidy_amount != null);
+    if (!hasData) return null;
+
+    return {
+      name: fy,
+      target: parseFloat(target.toFixed(2)),
+      actual: parseFloat(actual.toFixed(2))
+    };
+  }).filter(Boolean);
+}
+
+/**
+ * NSWLD-05: Chart D — District-wise No. of Working Women Hostels
+ *
+ * ⚠️ FY-EXEMPT: This chart does NOT respect the page FY filter.
+ * Verified: only 5 districts have non-null values across only 2 periods
+ * (FY2025-26 H1 and FY2026-27 H1). The screenshot bar heights only
+ * reproduce by summing across all periods regardless of FY selection.
+ * Same precedent as SAM section on Page 2 being exempt from FY filtering.
+ *
+ * value (per district) = SUM(target_hostels) across all FY × Half Year rows
+ * Only show districts with a non-zero sum. Sort descending, alpha tiebreaker.
+ *
+ * Fields: target_hostels, district_name
+ */
+export function getHostelsAllTime(rawHostels) {
+  if (!rawHostels) return [];
+
+  // Group by district_name and sum target_hostels across all periods
+  const districtMap = {};
+  rawHostels.forEach(r => {
+    if (!r.district_name || r.target_hostels == null) return;
+    if (!districtMap[r.district_name]) districtMap[r.district_name] = 0;
+    districtMap[r.district_name] += r.target_hostels;
+  });
+
+  // Convert to array, filter non-zero, sort descending by value then alpha
+  return Object.entries(districtMap)
+    .filter(([, v]) => v > 0)
+    .map(([name, value]) => ({
+      // Title-case the district name for display
+      name: name.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()).join(' '),
+      value
+    }))
+    .sort((a, b) => b.value - a.value || a.name.localeCompare(b.name));
+}
+
+/**
+ * NSWLD-17(2): Chart E — Jagruti Shibir Sessions, butterfly/diverging bar
+ * State-level sum across all districts per FY.
+ *
+ * Note: intervention_code in the raw data is mislabeled 'NSWLD-17' (should be 'NSWLD-17(2)').
+ * We identify this sheet by using the rawJagruti data loaded from NSWLD-17_2.json directly.
+ *
+ * Fields: target_sessions, actual_sessions
+ */
+export function getJagrutiSessionsByFY(rawJagruti, selectedFY) {
+  if (!rawJagruti) return [];
+
+  const fys = selectedFY ? [selectedFY] : NSWLD17_REAL_FYS;
+
+  return fys.map(fy => {
+    const rows = rawJagruti.filter(r => r.fy === fy);
+    const target = rows.reduce((s, r) => s + (r.target_sessions || 0), 0);
+    const actual = rows.reduce((s, r) => s + (r.actual_sessions || 0), 0);
+
+    const hasData = rows.some(r => r.target_sessions != null || r.actual_sessions != null);
+    if (!hasData) return null;
+
+    return {
+      name: fy,
+      target,           // positive for display label
+      actual,           // positive teal bar extending right
+      negTarget: -target // lavender bar extending left (butterfly layout trick)
+    };
+  }).filter(Boolean);
+}
+
+/**
+ * NSWLD-17(2): Chart F — Jagruti Shibir Participants, line/area chart
+ * State-level sum across all districts per FY.
+ *
+ * Fields: target_participants, actual_participants
+ */
+export function getJagrutiParticipantsByFY(rawJagruti, selectedFY) {
+  if (!rawJagruti) return [];
+
+  const fys = selectedFY ? [selectedFY] : NSWLD17_REAL_FYS;
+
+  return fys.map(fy => {
+    const rows = rawJagruti.filter(r => r.fy === fy);
+    const target = rows.reduce((s, r) => s + (r.target_participants || 0), 0);
+    const actual = rows.reduce((s, r) => s + (r.actual_participants || 0), 0);
+
+    const hasData = rows.some(r => r.target_participants != null || r.actual_participants != null);
+    if (!hasData) return null;
+
+    return { name: fy, target, actual };
+  }).filter(Boolean);
+}
