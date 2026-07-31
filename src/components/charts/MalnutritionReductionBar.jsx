@@ -204,7 +204,7 @@ export default function MalnutritionReductionBar({
         margin={{
           top: isModal ? 25 : 18,
           right: isModal ? 30 : 20,
-          bottom: needsRotation ? (isModal ? 70 : 55) : 20,
+          bottom: needsRotation ? (isModal ? 70 : 20) : 20,
           left: isModal ? 0 : -10
         }}
       >
@@ -304,7 +304,7 @@ export default function MalnutritionReductionBar({
           flexWrap: 'wrap',
           gap: 8,
           marginTop: 2,
-          marginBottom: 8
+          marginBottom: 2
         }}>
           {renderBreadcrumbs()}
           <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
@@ -340,7 +340,7 @@ export default function MalnutritionReductionBar({
             borderRadius: 16,
             width: '92vw',
             height: '88vh',
-            padding: '24px 28px',
+            padding: '20px 28px',
             boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.35)',
             display: 'flex',
             flexDirection: 'column',

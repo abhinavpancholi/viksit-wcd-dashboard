@@ -7,7 +7,7 @@ const NAV_ITEMS = [
   { label: 'Summary', to: '/summary', disabled: true },
   { label: 'Overview', to: '/', disabled: false },
   { label: 'Health & Adolescent Nutrition', to: '/health', disabled: false },
-  { label: 'Awareness & Behaviour Change', to: '/awareness', disabled: true },
+  { label: 'Awareness & Behaviour Change', to: '/awareness', disabled: false },
   { label: 'Infra, Digital Platforms & Women Empowerment', to: '/infra', disabled: true },
 ]
 
@@ -38,6 +38,13 @@ const REGION_DISTRICTS = {
 
 function StatCards() {
   const config = useWcdStore((s) => s.config)
+  const location = useLocation()
+
+  // Requirement: Stat cards (Interventions, Actionable Steps, KPIs) ONLY visible on Overview page (/ or /overview)
+  if (location.pathname !== '/' && location.pathname !== '/overview') {
+    return null
+  }
+
   if (!config) return null
 
   return (

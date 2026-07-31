@@ -618,4 +618,285 @@ export function getAyushThrTargetActual(rawAyush, selectedFY, selectedRegion, se
   })).sort((a, b) => b.target_lakh - a.target_lakh);
 }
 
+// ==========================================
+// 13. Page 3: Awareness & Behaviour Change Selectors
+// ==========================================
+
+/**
+ * Shared Utility: Trims leading and trailing zero/null actual records from a chronologically ordered array.
+ * - rows must already be in chronological order
+ * - strip leading rows where actualValueFn(row) is 0, null, or undefined
+ * - strip trailing rows where actualValueFn(row) is 0, null, or undefined
+ * - do NOT strip zero-actual rows that sit between two non-zero rows
+ */
+export function trimToReportedRange(rows, actualValueFn) {
+  if (!rows || !rows.length) return [];
+
+  let start = 0;
+  while (start < rows.length) {
+    const val = actualValueFn(rows[start]);
+    if (val !== null && val !== undefined && val !== 0) break;
+    start++;
+  }
+
+  let end = rows.length - 1;
+  while (end >= start) {
+    const val = actualValueFn(rows[end]);
+    if (val !== null && val !== undefined && val !== 0) break;
+    end--;
+  }
+
+  if (start > end) return [];
+  return rows.slice(start, end + 1);
+}
+
+/**
+ * Page 3 - Chart 1: Average Participation per Session in BBBP Awareness Program
+ * Formula per month: SUM(actual_participants) / SUM(actual_programs), rounded to nearest integer
+ * FY behavior: defaults to latest reported FY ('2025-26') if selectedFY is null.
+ * Region behavior: narrows to districts in selected region/district.
+ */
+export function getBbbpAvgParticipationPerSession(rawBbbp, filters, districts) {
+  if (!rawBbbp) return { data: [], resolvedFY: '2025-26' };
+
+  // Resolve effective FY: if selectedFY is null, find latest FY with reported actual programs
+  let effectiveFY = filters.selectedFY;
+  if (!effectiveFY) {
+    const fyWithData = new Set();
+    rawBbbp.forEach(r => {
+      if ((r.actual_programs || 0) > 0 && r.fy) {
+        fyWithData.add(r.fy);
+      }
+    });
+    const sortedFys = Array.from(fyWithData).sort();
+    effectiveFY = sortedFys.length > 0 ? sortedFys[sortedFys.length - 1] : '2025-26';
+  }
+
+  const rows = filterRows(rawBbbp, { ...filters, selectedFY: effectiveFY }, districts);
+
+  const MONTH_NAMES_FY_ORDER = [
+    "April", "May", "June", "July", "August", "September",
+    "October", "November", "December", "January", "February", "March"
+  ];
+
+  const monthSums = {};
+  MONTH_NAMES_FY_ORDER.forEach(m => {
+    monthSums[m.toUpperCase()] = { part: 0, prog: 0 };
+  });
+
+  rows.forEach(r => {
+    if (r.month) {
+      const mKey = r.month.toUpperCase();
+      if (monthSums[mKey]) {
+        monthSums[mKey].part += (r.actual_participants || 0);
+        monthSums[mKey].prog += (r.actual_programs || 0);
+      }
+    }
+  });
+
+  const data = MONTH_NAMES_FY_ORDER.map(m => {
+    const mKey = m.toUpperCase();
+    const { part, prog } = monthSums[mKey];
+    const avg = prog > 0 ? Math.round(part / prog) : 0;
+    return {
+      name: m,
+      month: m,
+      avg_participation: avg,
+      actual_participants: part,
+      actual_programs: prog
+    };
+  });
+
+  return { data, resolvedFY: effectiveFY };
+}
+
+/**
+ * Page 3 - Chart 2: Participation in Awareness Session under BBBP (district bar)
+ * Source: NSWLD-10 (rawBbbp), target_participants / actual_participants
+ * FY behavior: defaults to latest reported FY ('2025-26') if selectedFY is null.
+ * Region behavior: narrows to districts in selected region if selectedRegion is set.
+ * Returns array sorted descending by actual_participants.
+ */
+export function getBbbpDistrictParticipation(rawBbbp, filters, districts) {
+  if (!rawBbbp || !districts) return { data: [], resolvedFY: '2025-26' };
+
+  let effectiveFY = filters.selectedFY;
+  if (!effectiveFY) {
+    const fyWithData = new Set();
+    rawBbbp.forEach(r => {
+      if ((r.actual_participants || 0) > 0 && r.fy) {
+        fyWithData.add(r.fy);
+      }
+    });
+    const sortedFys = Array.from(fyWithData).sort();
+    effectiveFY = sortedFys.length > 0 ? sortedFys[sortedFys.length - 1] : '2025-26';
+  }
+
+  // Filter rows by FY and district if selectedDistrict is set
+  const rows = rawBbbp.filter(r => r.fy === effectiveFY);
+
+  const distMap = {};
+  districts.forEach(d => {
+    distMap[d.district_name] = {
+      name: d.district_name,
+      code: d.district_code,
+      region: d.region,
+      actual: 0,
+      target: 0
+    };
+  });
+
+  rows.forEach(r => {
+    if (r.district_name && distMap[r.district_name]) {
+      distMap[r.district_name].actual += (r.actual_participants || 0);
+      distMap[r.district_name].target += (r.target_participants || 0);
+    }
+  });
+
+  let distList = Object.values(distMap);
+
+  // If region is selected, narrow the district list to districts in that region only
+  if (filters.selectedRegion) {
+    distList = distList.filter(d => d.region === filters.selectedRegion);
+  }
+
+  // Sort descending by actual
+  distList.sort((a, b) => b.actual - a.actual);
+
+  return { data: distList, resolvedFY: effectiveFY };
+}
+
+/**
+ * Page 3 - Chart 3: Month wise Beneficiaries of Vahali Dikari Yojana
+ * Source: NSWLD-10_2 (rawVahali)
+ * FY behavior: Responds to selectedFY (filters by selectedFY if set; sums all-time if selectedFY is null).
+ * Region behavior: narrows to districts in selected region/district.
+ */
+export function getVahaliMonthlyBeneficiaries(rawVahali, filters, districts) {
+  if (!rawVahali) return [];
+
+  // Filter rows by FY if selectedFY is set, and by Geo
+  const rows = filterRows(rawVahali, filters, districts);
+
+  const MONTH_NAMES_FY_ORDER = [
+    "April", "May", "June", "July", "August", "September",
+    "October", "November", "December", "January", "February", "March"
+  ];
+
+  const monthSums = {};
+  MONTH_NAMES_FY_ORDER.forEach(m => {
+    monthSums[m.toUpperCase()] = 0;
+  });
+
+  rows.forEach(r => {
+    if (r.month) {
+      const mKey = r.month.toUpperCase();
+      if (monthSums[mKey] !== undefined) {
+        monthSums[mKey] += (r.actual || 0);
+      }
+    }
+  });
+
+  return MONTH_NAMES_FY_ORDER.map(m => ({
+    name: m,
+    month: m,
+    actual: monthSums[m.toUpperCase()]
+  }));
+}
+
+/**
+ * Page 3 - Chart 4: Number of Sensitization Programs Conducted at State Level Departments
+ * Source: NSWLD-29 (rawSensitizationState)
+ * Responds to selectedFY (filters to selectedFY if set; shows trimmed multi-year trend if null).
+ */
+export function getSensitizationProgramsStateLevel(rawSensitizationState, filters = {}) {
+  if (!rawSensitizationState) return [];
+
+  const fyMap = {};
+  rawSensitizationState.forEach(r => {
+    if (!r.fy) return;
+    if (filters.selectedFY && r.fy !== filters.selectedFY) return;
+    if (!fyMap[r.fy]) {
+      fyMap[r.fy] = { fy: r.fy, target: 0, actual: 0 };
+    }
+    fyMap[r.fy].target += (r.target_programs || 0);
+    fyMap[r.fy].actual += (r.actual_programs || 0);
+  });
+
+  const sortedFys = Object.values(fyMap).sort((a, b) => a.fy.localeCompare(b.fy));
+  if (filters.selectedFY) return sortedFys;
+  return trimToReportedRange(sortedFys, r => r.actual);
+}
+
+/**
+ * Page 3 - Chart 5: Number of Participants attending Gender Sensitization Programs
+ * Source: NSWLD-29 (rawSensitizationState)
+ * Responds to selectedFY (filters to selectedFY if set; shows trimmed multi-year trend if null).
+ */
+export function getSensitizationParticipantsStateLevel(rawSensitizationState, filters = {}) {
+  if (!rawSensitizationState) return [];
+
+  const fyMap = {};
+  rawSensitizationState.forEach(r => {
+    if (!r.fy) return;
+    if (filters.selectedFY && r.fy !== filters.selectedFY) return;
+    if (!fyMap[r.fy]) {
+      fyMap[r.fy] = { fy: r.fy, target: 0, actual: 0 };
+    }
+    fyMap[r.fy].target += (r.target_participants || 0);
+    fyMap[r.fy].actual += (r.actual_participants || 0);
+  });
+
+  const sortedFys = Object.values(fyMap).sort((a, b) => a.fy.localeCompare(b.fy));
+  if (filters.selectedFY) return sortedFys;
+  return trimToReportedRange(sortedFys, r => r.actual);
+}
+
+/**
+ * Page 3 - Chart 6: Participants in Gender Sensitization via SETU
+ * Source: NSWLD-30 (rawSetu)
+ * Responds to selectedFY (filters to quarters of selectedFY if set; shows trimmed all-quarters if null).
+ */
+export function getSetuSensitizationQuarterly(rawSetu, filters = {}) {
+  if (!rawSetu) return [];
+
+  const qList = rawSetu
+    .filter(r => r.fy && r.quarter)
+    .filter(r => !filters.selectedFY || r.fy === filters.selectedFY)
+    .map(r => ({
+      quarter: `${r.quarter} ${r.fy}`,
+      fy: r.fy,
+      q: r.quarter,
+      target: r.target,
+      actual: r.actual
+    }));
+
+  if (filters.selectedFY) return qList;
+  return trimToReportedRange(qList, r => r.actual);
+}
+
+/**
+ * Page 3 - Chart 7: Officers/Employees Sensitized re: Sexual Harassment Act 2013
+ * Source: NSWLD-34 (rawSexualHarassment)
+ * Responds to selectedFY (filters to quarters of selectedFY if set; shows trimmed all-quarters if null).
+ */
+export function getSexualHarassmentSensitizationQuarterly(rawSexualHarassment, filters = {}) {
+  if (!rawSexualHarassment) return [];
+
+  const qList = rawSexualHarassment
+    .filter(r => r.fy && r.quarter)
+    .filter(r => !filters.selectedFY || r.fy === filters.selectedFY)
+    .map(r => ({
+      quarter: `${r.quarter} ${r.fy}`,
+      fy: r.fy,
+      q: r.quarter,
+      target: r.target,
+      actual: r.actual
+    }));
+
+  if (filters.selectedFY) return qList;
+  return trimToReportedRange(qList, r => r.actual);
+}
+
+
 
